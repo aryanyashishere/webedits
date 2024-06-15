@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Yash | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="section" id="section2">
+        <div class="section-content">
+            <section class="sec-01">
+                <div class="container">
+
+                    <div class="content">
+                        <div class="image-main">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/037/981/760/small_2x/ai-generated-of-solitary-tree-silhouetted-against-vibrant-sunset-standing-on-small-hill-surrounded-by-calm-waters-clouds-should-be-scattered-across-the-sky-ai-generated-photo.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="text-box-main">
+                            <h3>I build Coaching Websites that are<h3 id="props">Stunning</h3>
+                            </h3>
+                            <p class="text-box-main-para" >I help coaches get more sales, clients and position them as an expert with their
+                                strategically built website
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="section-content">
+            <section class="sec-01">
+                <div class="container">
+
+                    <div class="content">
+                        <div class="image-me">
+                            <img src="me.jpg" alt="">
+                        </div>
+
+                        <div class="text-box">
+                            <p>Hey nice to meet you ,👋</p>
+                            <h3>I am Aryan Yash - a Web Designer based in New Delhi, working globally!</h3>
+                            <p>I help coaches like you get more sales/clients with your website so you can focus on
+                                growing your business and leave all the website tech and hassle to an expert like me.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="section" id="section4">
+        <div class="section-content">
+            <section class="sec-02">
+                <div class="container-yt-video" id="yt-js-handler">
+                    <h3 class="section-title">Check It Out</h3>
+                    <div class="content-yt-video" id="rmvElem1">
+                        <div class="image-video">
+                            <!-- <iframe width="560" height="315" -->
+                            <iframe width="250" height="180"
+                                src="https://www.youtube.com/embed/c74kMCOmP80?si=Z7AMdBq7w2UVm86Q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="info">
+                            <h4 class="info-title">Description</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illo eaque nobis,
+                                aliquam eum repudiandae ad culpa repellendus voluptate error accusamus asperiores
+                                velit?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="section" id="section5">
+        <div class="section-content">
+            <section class="sec-03">
+                <div class="container">
+                    <h3 class="section-title">Contact Me </h3>
+                    <p class="section-para"><b><span style="color: white;">We Can Catch up Later on Email : </span><span
+                                style="color: black;">aryanyash.here@gmail.com</span></b></p>
+                    <div class="content">
+                        <div class="media-info">
+                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </div>
+
+
+
+    <div class="section" id="section6">
+        <div class="section-content">
+            <h2>Snack Suggestor</h2>
+            <button type="button" class="btn btn-dark" onclick="food()">Suggest</button>
+
+            <p id="snack">My new snack or meal should be : </p>
+            <div id="suggestion"> </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal(' .sec-01 .image', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal('.sec-02 .image', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('.media-info li', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.', { delay: 100, origin: 'left' });
+
+        const propsAnimation = () => {
+            const text = document.getElementById("props");
+            setTimeout(() => {
+                text.innerHTML = "Powerful";
+
+            }, 2000);
+
+            setTimeout(() => {
+                text.innerHTML = "Strategic"
+            }, 4000);
+            setTimeout(() => {
+                text.innerHTML = "Stunning"
+            }, 6000);
+        }
+        setInterval(propsAnimation, 8000)
+
+
+    </script>
+
+
+</body>
+
+</html>

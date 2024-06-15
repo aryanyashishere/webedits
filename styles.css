@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* .shadows-into-light-two-regular {
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,
+body {
+    /* margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; Hide horizontal scrollbar */
+    background: #171830;
+
+}
+
+
+
+.section {
+    position: relative;
+    /* Set position to relative */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+
+    width: 100%;
+    height: 100vh;
+    /* text-align: center; */
+    font-family: Arial, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-content {
+    position: relative;
+    /* Set position to relative */
+    z-index: 1;
+    /* Set a higher z-index value */
+
+
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-yt-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 23px; */   
+    /* it is media query */
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 80px;
+
+}
+
+.section-para {
+    font-size: 24px;
+    color: #080808;
+
+}
+
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-yt-video {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+/* for media query  */
+
+}
+
+.content .image-video {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+    
+}
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+/* IMAGES */
+
+
+.content .image-me {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+
+.content .image-main {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+
+.content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+
+
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.content .image-me img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* TEXT BOXES  */
+.content .text-box-main {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    padding: 40px;
+    max-width: 326px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+
+.content .text-box-main h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4em;
+
+}
+
+.media-info li a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+
+
+
+.section1-content {
+    position: relative;
+    /* Set position to relative */
+    z-index: 1;
+    /* Set a higher z-index value */
+
+
+}
+
+
+
+#section2 {
+    /* background-image: radial-gradient(circle, #0d5c48 0%, #114e5a 100%); */
+    color: #ffffff;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/037/981/760/small_2x/ai-generated-of-solitary-tree-silhouetted-against-vibrant-sunset-standing-on-small-hill-surrounded-by-calm-waters-clouds-should-be-scattered-across-the-sky-ai-generated-photo.jpg");
+}
+
+#section3 {
+    background-image: radial-gradient(circle, #9b4234 0%, #080808 100%);
+    color: #ffffff;
+}
+
+#section4 {
+    background-image: radial-gradient(circle, #072d30 0%, #11aac9 100%);
+    color: #ffffff;
+}
+
+#section5 {
+    background: rgb(0, 236, 255);
+    background: radial-gradient(circle, rgb(2, 173, 185) 12%, rgb(119, 107, 155) 52%, rgba(0, 30, 36, 1) 100%);
+
+}
+
+#section6 {
+    background: rgb(0, 30, 36);
+    background: linear-gradient(90deg, rgba(0, 30, 36, 1) 0%, rgba(26, 9, 121, 1) 48%, rgba(0, 236, 255, 1) 100%);
+    color: white;
+}
+
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+
+/* media queries started */
+
+
+
+
+@media (max-width: 413px) and (min-width: 350px) {
+    /* .section{
+        width: 146%;
+    height: 146vh;
+    } */
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: -96px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content {
+        position: relative;
+        width: 537px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content .image-main {
+        display: none;
+    }
+    .content .text-box-main {
+        margin-left: 160px;
+        backdrop-filter: blur(10px);
+    }
+
+    .content .text-box-main h3 {
+        font-size: 50px;
+    }
+    .content .text-box-main-para{
+        font-size: 24px;
+    }
+
+    .content .image-me {
+        position: static;
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .content .image-me img {
+        border-radius: 50%;
+        height: 76%;
+        margin-top: 14px;
+    }
+    .content .text-box {
+        z-index: 222;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(50px);
+        padding: 34px;
+        max-width: 516px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transform: translate(-80px, 50px);
+        font-size: 17px;
+        margin-top: 388px;
+        margin-left: 66px;
+        
+    }
+
+    .content .text-box h3 {
+        font-size: 26px;
+        margin-bottom: 3px;
+    }
+
+   
+   
+}
+
+@media (max-width: 413px) and (min-width: 350px) {
+    .container-yt-video{
+        margin-bottom: 23px;
+
+    }
+    .content-yt-video{
+        flex-direction: column;
+    }
+
+    .content .image-video{
+        margin-bottom: 24px;
+    }
+
+    .section-title{
+        margin-bottom: 20px;
+        font-size: 2em;
+        margin-top: 49px;
+
+    }
+
+    .info{
+        width: 246px;
+        margin-left: 21px;
+    }
+
+
+}
