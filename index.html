@@ -76,8 +76,8 @@
                     <h3 class="section-title">Check It Out</h3>
                     <div class="content-yt-video" id="rmvElem1">
                         <div class="image-video">
-                            <!-- <iframe width="560" height="315" -->
-                            <iframe width="250" height="180"
+                            <!-- <iframe width="250" height="180" -->
+                            <iframe id="videoRef" width="560" height="315"
                                 src="https://www.youtube.com/embed/c74kMCOmP80?si=Z7AMdBq7w2UVm86Q"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -85,9 +85,9 @@
                         </div>
                         <div class="info">
                             <h4 class="info-title">Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illo eaque nobis,
+                            <p class="info-title-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, illo eaque nobis,
                                 aliquam eum repudiandae ad culpa repellendus voluptate error accusamus asperiores
-                                velit?
+                                velit?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis amet perferendis dolorem accusamus, quas voluptates repellendus vitae sapiente, expedita itaque dicta accusantium iste cumque aut adipisci aperiam nam, quisquam odio deleniti sit eum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, quibusdam sit. Sequi adipisci dolores placeat asperiores atque id architecto sunt, dolor amet labore eveniet illum, inventore molestiae laboriosam temporibus iste impedit provident consequatur soluta.
                             </p>
                         </div>
                     </div>
@@ -165,6 +165,29 @@
             }, 6000);
         }
         setInterval(propsAnimation, 8000)
+
+        const widthMedia = window.matchMedia('(min-width: 600px)');
+        function ytVideoSizeHandler(e) {
+            const video = document.getElementById('videoRef');
+            if (e.matches) {
+                // If media query matches (viewport is at least 600px wide)
+                // <iframe id="videoRef" width="560" height="315"
+                // <!-- <iframe width="250" height="180" -->
+                    video.setAttribute('width', '560');
+                video.setAttribute('height', '315');
+
+                
+            } 
+            else {
+                // If media query does not match (viewport is less than 600px wide)
+              video.setAttribute('width', '300');
+                video.setAttribute('height', '250');
+            }
+        }
+
+        ytVideoSizeHandler(widthMedia);
+        widthMedia.addEventListener('change', ytVideoSizeHandler);
+
 
 
     </script>

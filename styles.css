@@ -116,16 +116,21 @@ html{
 }
 
 .info {
-    width: 70rem;
+    width: 45rem;
     /* width: 700px; */
     /* margin-left: 50px; */
     margin-left: 5rem;
     
 }
 .info-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
 
+}
+
+.info-title-para{
+    font-size: 1.6rem;
 }
 
 
@@ -452,7 +457,7 @@ html{
     }
 
     .info{
-        width: 24.6rem;
+        /* width: 24.6rem; */
         margin-left: 2.1rem;
         /* width: 246px;
         margin-left: 21px; */
